@@ -7,7 +7,8 @@ var app = new Vue({
       "img/image2.jpg",
       "img/image3.jpg",
       "img/image4.jpg"
-    ]
+    ],
+    classeCircles:"fas fa-circle",
   },
   methods:{
     nextFoto: function (){
@@ -22,7 +23,7 @@ var app = new Vue({
       this.fotoIndex = this.fotoIndex - 1;
 
       if (this.fotoIndex < 0){
-        this.fotoIndex = (this.foto.length - 1) ;
+        this.fotoIndex = (this.foto.length -1) ;
       }
     }
   }
